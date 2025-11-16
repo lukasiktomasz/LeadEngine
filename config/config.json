@@ -1,0 +1,16 @@
+{
+  "app": {
+    "name": "LeadEngine",
+    "version": "1.0.0"
+  },
+  "logging": {
+    "level": "INFO",
+    "log_dir": "logs",
+    "log_file": "app.log"
+  },
+  "database": {
+    "timeout": 30,
+    "max_retries": 3
+  }
+}
+

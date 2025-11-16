@@ -1,0 +1,29 @@
+{
+  "module": {
+    "name": "website_scraper",
+    "version": "1.0.0",
+    "description": "Moduł do pobierania danych firm z witryn internetowych"
+  },
+  "scraping": {
+    "max_retries": 3,
+    "timeout": 30,
+    "delay_between_requests": 1.0,
+    "delay_between_retries": 2.0
+  },
+  "database": {
+    "source_table": "CRM.Event",
+    "source_url_column": "WWW",
+    "source_id_column": "Id",
+    "target_table": "CRM.Company",
+    "parser_mapping": {
+      "targikielce.pl": "targi_kielce",
+      "example.com": "example_site"
+    }
+  },
+  "mapping": {
+    "default_country_id": 1,
+    "default_industry_id": 1,
+    "default_contact_data_source_id": 1
+  }
+}
+
