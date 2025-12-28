@@ -2,5 +2,8 @@
 Moduł website_scraper - pobieranie danych firm z witryn internetowych
 """
 
-__version__ = "1.0.0"
+from .engine import ScrapingEngine
+from .base_parser import BaseParser
+from .parsers.targi_kielce import TargiKielceParser
 
+__all__ = ['ScrapingEngine', 'BaseParser', 'TargiKielceParser']
